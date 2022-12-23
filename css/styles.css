@@ -1,0 +1,152 @@
+ body{
+    font-family:'Roboto', sans-serif;
+} 
+#title{
+    background-color:#ff4c68;
+}
+
+.container-fluid{
+    padding:3% 15% 7%;
+    
+}
+
+h1{
+    font-family: 'Eczar', serif;
+    font-size:3.5rem;
+    line-height:1.5;
+    color:white;/*to change font color,angela used this in title as h1 is present in title id(well both are acceptable) */
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:3rem;
+    line-height:1.5;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight:bold;
+}
+/* Navigation Bar */
+.navbar{
+    padding:0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family:'Roboto', sans-serif;
+    font-size:2.5rem;
+    font-weight:bold;
+}
+
+.nav-item{
+    padding:0 18px;
+}
+
+.nav-link{
+    font-size:1.5rem;
+    font-family:'Roboto', sans-serif;
+}
+/*Download Buttons*/
+.download-button{
+    margin:5% 3% 5% 0;/*   100%=90px */
+}
+/* Title Image */ 
+.title-image{
+    width:20%;
+    transform:rotate(25deg);
+    position:absolute;
+    right:30%;
+
+ }
+/* features section */
+#features{
+    padding:7% 15%;
+    background-color:#fff;/*(should not be transparent) */
+    position:relative;/* position must be relative so that title-image can be visible */
+    z-index: 1;
+}
+.feature-box{
+    text-align:center;
+    padding:5%;
+}
+
+p{
+    color:#8f8f8f;
+}
+.icon{
+    color:#ef8172;
+    margin-bottom:1rem;
+}
+.icon:hover{
+    color:#ff4c68;
+}
+/* Testimonial Section */
+
+#testimonials{
+    text-align:center;
+    background-color: #ff4c68;
+    color:#fff;
+    position:relative;/* (inorder to hide the phone image) */
+    z-index:1;
+}
+
+/* carousel-item */
+.carousel-item{
+    padding:7% 15%;
+}
+
+/* testimonial-image*/
+.testimonial-image{
+    width:20%;
+    border-radius: 100%;
+    margin:20px;
+}
+/* press-section */
+#press{
+    background-color:#ff4c68;
+    text-align:center;
+    padding-bottom:3%;
+}
+/* inorder to change the logos and apply the same style to them we need to give them same class */
+.press-logo{
+    width:15%;
+    margin:20px 20px 50px;
+}
+/*Pricing Section*/
+#pricing{
+    padding:100px;
+    text-align:center;
+}
+.pricing-column{
+    padding:3% 2%;
+}
+/* USING CSS BREAKPOINTS MEDIA QUERY */
+/* i am applying media query to the point where my website is completely changing,click inspect and check my website is complety changed after width below width 1028px. */
+@media (max-width:1654px){
+    #title{
+        text-align:center;/* to make them center align from left */
+    }
+    .title-image{
+        position:static;/* to the original position as it was */
+        transform:rotate(0);
+        width:40%;/* earlier it was 20% */
+    }
+}
+/* section cta  */
+#cta{
+    background-color:#ff4c68;
+    color:#fff;
+    text-align:center;
+    padding:7% 15%;
+}
+.l{
+    font-family:'Eczar', serif;
+    font-size:3.5rem;
+    line-height:1.5;
+}
+#footer{
+    text-align:center;
+    padding:7% 15%;
+}
+.f{
+    margin:20px;
+}
+
